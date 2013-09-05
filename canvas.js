@@ -68,6 +68,7 @@ function pp2(e){
          if(ch[xp][yp]==b){  // only black chess, owner chess 
            drw_ch(xp,yp,bg);
            cch['x']=xp; cch['y']=yp;
+           tmp_ch[it]['x']==xp; tmp_ch[it]['y']==yp;
          } 
        }else{ //if chess already select 
           findPath(xp,yp); 
