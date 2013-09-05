@@ -35,7 +35,7 @@ function findPath(xp,yp){
          if(ch[jpx][jpy]==b){
            if(tmp_ch[it-1]['x']==xp && tmp_ch[it-1]['y']==yp){
              cch[it]=[];it++;
-             cch[it]['x']=xp; cch[it]['y']=yp;
+             
              drw_ch(cch['x'],cch['y'],cl); 
              drw_ch(xp,yp,b); cch=[]; 
              log('yes'); 
@@ -64,7 +64,8 @@ function pp2(e){
   
        if(!cch['x']){       //empty, select point for next step 
          if(ch[xp][yp]==b){  // only black chess, owner chess 
-           drw_ch(xp,yp,bg); 
+           drw_ch(xp,yp,bg);
+           cch['x']=xp; cch['y']=yp;
          } 
        }else{ //if chess already select 
           findPath(xp,yp); 
