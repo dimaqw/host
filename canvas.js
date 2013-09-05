@@ -34,7 +34,7 @@ function findPath(xp,yp){
            
          if(ch[jpx][jpy]==b){
            it++; cch[it]=[];
-           if(tmp_ch[it]['x']==xp && tmp_ch[it]['y']==yp){
+           if(tmp_ch[it-1]['x']==xp && tmp_ch[it-1]['y']==yp){
              
              
              drw_ch(cch['x'],cch['y'],cl); 
