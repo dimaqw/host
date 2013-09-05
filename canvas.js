@@ -4,7 +4,7 @@ var ih=50;
 var iw=60; 
 var ds=2; //diagonal step if 1 deny 
 var dj=8; //diagonal jamp if 4 deny 
-  
+var it =0; //count for tmp_ch array each step
 var ch = new Array(); 
 var tmp_ch = new Array(); 
 tmp_ch['x']=''; tmp_ch['y']=''; 
@@ -33,7 +33,9 @@ function findPath(xp,yp){
          jpx=(cch['x']+xp)/2; jpy=(cch['y']+yp)/2; 
            
          if(ch[jpx][jpy]==b){ 
-           if(tmp_ch['x']==xp && tmp_ch['y']==yp){ 
+           if(tmp_ch[it-1]['x']==xp && tmp_ch[it-1]['y']==yp){
+             cch[it]=[];it++;
+             cch[it]['x']=xp; cch[it]['y']=yp;
              drw_ch(cch['x'],cch['y'],cl); 
              drw_ch(xp,yp,b); cch=[]; 
              log('yes'); 
@@ -62,7 +64,6 @@ function pp2(e){
   
        if(!cch['x']){        //empty, select point for next step 
          if(ch[xp][yp]==b){  // only black chess, owner chess 
-           cch['x']=xp; cch['y']=yp; 
            drw_ch(xp,yp,bg); 
          } 
        }else{ //if chess already select 
