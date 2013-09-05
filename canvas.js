@@ -30,7 +30,7 @@ function findPath(xp,yp){
       }else if(cx+cy<=dj){ 
         
          //check, in jump-step must be any chess between other chess 
-         jpx=(cch['x']+xp)/2; jpy=(cch['y']+yp)/2; 
+         jpx=(tmp_ch[it]['x']+xp)/2; jpy=(tmp_ch[it]['y']+yp)/2; 
            
          if(ch[jpx][jpy]==b){
            if(tmp_ch[it]['x']==xp && tmp_ch[it]['y']==yp){
