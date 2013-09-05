@@ -96,7 +96,7 @@ function pp2(e){
     } 
     if(colour==cl){ 
       cntx.beginPath(); 
-      cntx.arc((xp*iw)-iw/2,(yp*ih)-ih/2,20,0,Math.PI*2,false); 
+      cntx.arc((xp*iw)-iw/2,(yp*ih)-ih/2,22,0,Math.PI*2,false); 
       cntx.closePath(); 
       cntx.strokeStyle = '#fff'; cntx.stroke(); 
       cntx.fillStyle = '#fff'; cntx.fill(); 
