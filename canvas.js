@@ -7,7 +7,7 @@ var dj=8; //diagonal jamp if 4 deny
 var it =0; //count for tmp_ch array each step
 var ch = new Array(); 
 var tmp_ch = new Array(); 
-tmp_ch['x']=''; tmp_ch['y']=''; 
+tmp_ch[0]=[]; tmp_ch[0]['x']=''; tmp_ch[0]['y']=''; 
   
 //ch['y']=[];ch['x']=[]; 
   
