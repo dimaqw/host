@@ -42,9 +42,9 @@ function findPath(xp,yp){
              log('yes'); 
            }else{
             //fill tmp_ch array 
-            cch[it]=[];
+           
             tmp_ch[it]['x']=xp; tmp_ch[it]['y']=yp;
-            it++;
+            
             drw_ch(xp,yp,tmp); 
             log(tmp_ch['x'],tmp_ch['y']); 
               
