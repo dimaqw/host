@@ -33,7 +33,7 @@ function findPath(xp,yp){
          jpx=(tmp_ch[it]['x']+xp)/2; jpy=(tmp_ch[it]['y']+yp)/2; 
            
          if(ch[jpx][jpy]==b){
-           it++; cch[it]=[];
+           it++; tmp_ch[it]=[];
            if(tmp_ch[it-1]['x']==xp && tmp_ch[it-1]['y']==yp){
              
              
