@@ -23,7 +23,7 @@ function drw_ch(xp,yp){
     cntx.arc(xp,yp,diam,0,Math.PI*2,false); 
     cntx.closePath(); 
     cntx.fillStyle = '#000'; cntx.fill(); 
-      
+    diam+=5;
  } 
    
 function t(fn,j,ms){
