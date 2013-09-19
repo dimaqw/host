@@ -1,5 +1,6 @@
 var d = document;
 var diam = 2;
+var g =3 //giam diameter
   
 function pp2(e){
   var cnv = d.getElementById('cnv');
@@ -8,7 +9,7 @@ function pp2(e){
      color = get_random_color();
      t('drw_ch(x,y,color)',8,100)
      //drw_ch(x,y);
-     diam=5;
+     diam=2;
 } 
    
    
@@ -19,7 +20,7 @@ function drw_ch(xp,yp,color){
     cntx.arc(xp,yp,diam,0,Math.PI*2,false); 
     cntx.closePath(); 
     cntx.fillStyle = color; cntx.fill(); 
-    diam+=5;
+    diam+=g;
  } 
    
 function t(fn,j,ms){
