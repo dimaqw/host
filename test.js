@@ -6,17 +6,15 @@ var diam = 5;
   
 function pp2(e){
   
-  var cnv = d.getElementById('cnv'); 
-     x = e.pageX - cnv.offsetLeft; 
-     y = e.pageY - cnv.offsetTop; 
-     xp = Math.floor(x/iw);xp++; 
-     yp = Math.floor(y/ih);yp++; 
+  var cnv = d.getElementById('cnv');
+     x = e.pageX - cnv.offsetLeft;
+     y = e.pageY - cnv.offsetTop;
   
      
 } 
    
    
- function drw_ch(xp,yp){ 
+function drw_ch(xp,yp){ 
    var cnv = d.getElementById('cnv'); 
    var cntx = cnv.getContext('2d'); 
     
