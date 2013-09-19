@@ -7,7 +7,7 @@ function pp2(e){
      x = e.pageX - cnv.offsetLeft;
      y = e.pageY - cnv.offsetTop;
      color = get_random_color();
-     t('drw_ch(x,y,color)',8,100)
+     t('drw_ch(x,y,color)',8,50)
      //drw_ch(x,y);
      diam=2;
 } 
