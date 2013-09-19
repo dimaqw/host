@@ -1,6 +1,7 @@
 alert(1);
 //alert(12); 
-var d = document; 
+var d = document;
+var cnv = d.getElementById('cnv');
 var diam = 5;
 
   
@@ -36,14 +37,8 @@ var i=0;
 }
   
 $('document').ready(function(){ 
-  
-//alert('chess_init'); 
-var d = document; 
-  
- var cnv = d.getElementById('cnv'); 
  cnv.addEventListener('click',pp2,false); 
  var cntx = cnv.getContext('2d'); 
-   
  for(var x=0;x<=540;x+=60){ 
    cntx.moveTo(x,0); 
    cntx.lineTo(x,450); 
