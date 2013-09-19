@@ -10,6 +10,7 @@ function pp2(e){
      x = e.pageX - cnv.offsetLeft;
      y = e.pageY - cnv.offsetTop;
      drw_ch(x,y);
+     diam=5;
      
 } 
    
@@ -21,13 +22,17 @@ function drw_ch(xp,yp){
     cntx.beginPath(); 
     cntx.arc(xp,yp,diam,0,Math.PI*2,false); 
     cntx.closePath(); 
-
-    //ntx.strokeStyle = '#000'; cntx.stroke(); 
     cntx.fillStyle = '#000'; cntx.fill(); 
       
  } 
    
-   
+function t(fn,j,ms){
+var i=0;
+  while(i<j){
+    i++;
+    setTimeout(fn,i*ms);
+  }
+}
   
 $('document').ready(function(){ 
   
