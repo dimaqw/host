@@ -5,19 +5,20 @@ function pp2(e){
   var cnv = d.getElementById('cnv');
      x = e.pageX - cnv.offsetLeft;
      y = e.pageY - cnv.offsetTop;
-     t('drw_ch(x,y)',4,100)
+     color = get_random_color();
+     t('drw_ch(x,y,color)',4,100)
      //drw_ch(x,y);
      diam=5;
 } 
    
    
-function drw_ch(xp,yp){ 
+function drw_ch(xp,yp,color){ 
    var cnv = d.getElementById('cnv'); 
    var cntx = cnv.getContext('2d'); 
     cntx.beginPath(); 
     cntx.arc(xp,yp,diam,0,Math.PI*2,false); 
     cntx.closePath(); 
-    cntx.fillStyle = get_random_color(); cntx.fill(); 
+    cntx.fillStyle = color; cntx.fill(); 
     diam+=5;
  } 
    
