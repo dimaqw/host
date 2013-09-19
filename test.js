@@ -9,7 +9,8 @@ function pp2(e){
   var cnv = d.getElementById('cnv');
      x = e.pageX - cnv.offsetLeft;
      y = e.pageY - cnv.offsetTop;
-     drw_ch(x,y);
+     t('drw_ch(x,y)',4,100)
+     //drw_ch(x,y);
      diam=5;
      
 } 
