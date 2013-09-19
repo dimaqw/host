@@ -17,7 +17,7 @@ function drw_ch(xp,yp){
     cntx.beginPath(); 
     cntx.arc(xp,yp,diam,0,Math.PI*2,false); 
     cntx.closePath(); 
-    cntx.fillStyle = '#000'; cntx.fill(); 
+    cntx.fillStyle = get_random_color(); cntx.fill(); 
     diam+=5;
  } 
    
@@ -44,4 +44,13 @@ $('document').ready(function(){
   } 
   cntx.strokeStyle = '#eee'; 
   cntx.stroke(); 
-}); 
+});
+
+function get_random_color() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.round(Math.random() * 15)];
+    }
+    return color;
+}
