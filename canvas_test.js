@@ -1,4 +1,4 @@
-var c=document.getElementById("cnv";
+var c=document.getElementById("cnv");
 var ctx=c.getContext("2d");
 var img=document.getElementById("lamp");
 var pat=ctx.createPattern(img,"repeat");
