@@ -39,4 +39,3 @@ function sum ($e,$f,$g)
    echo $result3;
 }
 sum (1,2,3);
-
